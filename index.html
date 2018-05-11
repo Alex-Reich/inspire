@@ -6,7 +6,8 @@
 	<link rel="stylesheet" href="assets/css/style.css">
 </head>
 
-<body id="body">
+<body id="body" class="">
+
 	<div id="weather">
 		Your Weather Template
 	</div>
@@ -16,7 +17,12 @@
 	</div>
 
 	<div id="todo">
-		<form onsubmit=""></form>
+		<div id="todoList">
+		</div>
+		<form onsubmit="app.controllers.todoController.addTodoFromForm(event)">
+			<input type="text" name="todo" placeholder="To-do">
+			<button type="submit">SUBMIT</button>
+		</form>
 		A Todo List
 	</div>
 
