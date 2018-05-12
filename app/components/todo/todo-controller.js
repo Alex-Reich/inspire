@@ -25,14 +25,14 @@ function TodoController() {
 			if (todo.completed== false) {
 				template += `
 				<li>${todo.description}</li>
-				<input Type="checkbox" onclick="app.controllers.todoController.toggleTodoStatus('${todo._id}')">Toggle</input>
+				<input type="checkbox" onclick="app.controllers.todoController.toggleTodoStatus('${todo._id}')">Toggle</input>
 				<button onclick="app.controllers.todoController.removeTodo('${todo._id}')">DELETE</button>
 				`
 			}
 			else {
 				template += `
 				<li>${todo.description}</li>
-				<input Type="checkbox" onclick="app.controllers.todoController.toggleTodoStatus('${todo._id}')" checked>Toggle</input>
+				<input type="checkbox" onclick="app.controllers.todoController.toggleTodoStatus('${todo._id}')" checked>Toggle</input>
 				<button onclick="app.controllers.todoController.removeTodo('${todo._id}')">DELETE</button>
 				`
 			}
