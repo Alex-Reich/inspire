@@ -4,26 +4,41 @@
 	<meta charset="UTF-8">
 	<title>Inspire</title>
 	<link rel="stylesheet" href="assets/css/style.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+	 crossorigin="anonymous">
 </head>
 
-<body id="body" class="">
-
-	<div id="weather">
-		Your Weather Template
-	</div>
-
-	<div id="quote">
-		The Quote
-	</div>
-
-	<div id="todo">
-		<div id="todoList">
+<body id="body" class="container-fluid d-flex align-items-center flex-column space">
+	<div class="row p-4">
+		<div class="col whiteBox text-center">
+			<div id="weather" class="text-center">
+				Your Weather Template
+		
+			</div>
+		<!-- need help making button change image -->
+			<!-- <button class="btn" onclick="app.controllers.imageController.imageService.getImage()">Click to change image</button> -->
 		</div>
-		<form onsubmit="app.controllers.todoController.addTodoFromForm(event)">
-			<input type="text" name="todo" placeholder="To-do">
-			<button type="submit">SUBMIT</button>
-		</form>
-		A Todo List
+	</div>
+	<div class="row p-2">
+		<div class="col whiteBox">
+			<div id="todo">
+				<h2>Hello! Here are your current To-Dos:</h2>
+				<div id="todoList">
+				</div>
+				<form onsubmit="app.controllers.todoController.addTodoFromForm(event)">
+					<input type="text" name="todo" placeholder="To-do">
+					<button type="submit">SUBMIT</button>
+				</form>
+			</div>
+		</div>
+	</div>
+	<div class="row p-4">
+		<div class="col whiteBox text-center">
+			<h2>Today's Inspiration</h2>
+			<div id="quote">
+			</div>
+		</div>
+
 	</div>
 
 

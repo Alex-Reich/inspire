@@ -4,8 +4,8 @@ function QuoteController(){
 
 	qs.getQuote(function(quote){
 		var template = `
-		<h4>${quote.quote}</h4>
-		<h4>${quote.author}</h4>
+		<h2>${quote.quote} ~${quote.author}</h2>
+
 		`
 		console.log('What is the quote', quote)
 		document.getElementById("quote").innerHTML = template
