@@ -12,14 +12,14 @@
 
 	<body id="body" class="container-fluid d-flex align-items-center flex-column space">
 		<div class="row p-4">
-			<div class="col whiteBox text-center">
+			<div class="col text-center whiteBox">
 				<div id="weather" class="text-center">
 					Your Weather Template
 
 				</div>
-				<button class="btn btn-primary" onclick="app.controllers.imageController.getImage()">Click to change image</button>
 			</div>
 		</div>
+		<button class="btn btn-primary" onclick="app.controllers.imageController.getImage()">Click to change image</button>
 
 		<div class="whiteBox text-center">
 			<h1>Current Local Time</h1>
@@ -28,9 +28,9 @@
 		</div>
 
 		<div class="row p-2">
-			<div class="col whiteBox">
+			<div class="col whiteBox text-center">
 				<div id="todo">
-					<h1>Hello! Here are your current To-Dos:</h1>
+					<h1 class="underline">Hello! Here are your current To-Dos:</h1>
 					<div id="todoList" class="text-center">
 					</div>
 					<form onsubmit="app.controllers.todoController.addTodoFromForm(event)">
@@ -42,7 +42,7 @@
 		</div>
 		<div class="row p-4">
 			<div class="col whiteBox text-center">
-				<h2>Today's Inspiration</h2>
+				<h2 class="underline">Today's Inspiration</h2>
 				<div id="quote">
 				</div>
 			</div>
