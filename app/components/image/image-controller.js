@@ -7,7 +7,11 @@ function drawImage(image) {
 	document.body.style.backgroundColor = "black";
 	document.body.style.backgroundImage = `url('${image.large_url}')`
 }
-imageService.getImage(drawImage)
+
+this.getImage = function getImage(){
+
+	imageService.getImage(drawImage)
+}
 }
 
 
