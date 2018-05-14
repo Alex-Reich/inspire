@@ -14,3 +14,7 @@ background-repeat: no-repeat;
 .space {
     justify-content: space-between
 }
+.clock {
+    font-size: 2rem;
+    
+}
