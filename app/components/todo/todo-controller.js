@@ -18,14 +18,14 @@ function TodoController() {
 	function draw(todos) {
 		//WHAT IS MY PURPOSE?
 		//BUILD YOUR TODO TEMPLATE HERE
-		var template = `<ul>Total todos left: ${todos.length}`
+		var template = `<h2><ul>Total todos left: ${todos.length}</h2>`
 		//DONT FORGET TO LOOP
 		for (let i = 0; i < todos.length; i++) {
 			const todo = todos[i];
 			if (todo.completed== false) {
 				template += `
-				<li>${todo.description}</li>
-				<input type="checkbox" onclick="app.controllers.todoController.toggleTodoStatus('${todo._id}')">Completed</input>
+				<h3><li>${todo.description}</li></h3>
+				<input class="checkbox" type="checkbox" onclick="app.controllers.todoController.toggleTodoStatus('${todo._id}')">Completed</input>
 				<button onclick="app.controllers.todoController.removeTodo('${todo._id}')">DELETE</button>
 				`
 			}

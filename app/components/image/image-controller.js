@@ -4,14 +4,16 @@ function ImageController() {
 var imageService = new ImageService()
 
 function drawImage(image) {
-	document.body.style.backgroundColor = "black";
 	document.body.style.backgroundImage = `url('${image.large_url}')`
+	document.body.style.backgroundColor = "black";
 }
 
 this.getImage = function getImage(){
-
 	imageService.getImage(drawImage)
+
 }
+
+imageService.getImage(drawImage)
 }
 
 
